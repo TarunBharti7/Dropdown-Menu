@@ -1,0 +1,80 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+
+body {
+    background-image: url(bg.jpg);
+    background-size: cover;
+    font-family: sans-serif;
+}
+
+.menu-container {
+    background-color: blue;
+    text-align: center;
+}
+
+.menu-container ul {
+    display: flex;
+    justify-content: space-around;
+    /* height: 10vh; */
+    padding: 10px 5px;
+    align-items: center;
+    list-style: none;
+    color: white;
+}
+
+.menu-container ul li {
+    padding: 10px 15px;
+}
+
+.active, .menu-container ul li:hover {
+    background-color: royalblue;
+    border-radius: 3px;
+}
+
+.sub-menu-1 {
+    display: none;
+}
+
+.menu-container ul li:hover .sub-menu-1 {
+    display: block;
+    position: absolute;
+    background-color: blue;
+    margin-top: 10px;
+    margin-left: 15px;
+}
+
+.menu-container ul li:hover .sub-menu-1 ul {
+    display: block;
+    margin: 10px;
+}
+
+.menu-container ul li:hover .sub-menu-1 ul li {
+    width: 150px;
+    padding: 10px;
+    /* border-bottom: 1px dotted white; */
+    background: transparent;
+    text-align: left;
+}
+
+.menu-container ul li:hover .sub-menu-1 ul li:hover {
+    color: aqua;
+}
+
+.menu-container ul li:hover .sub-menu-1 ul li:last-child {
+    border-bottom: none;
+}
+
+.child-menu-1 {
+    display: none;
+}
+
+.hover-me:hover .child-menu-1 {
+    position: absolute;
+    display: block;
+    margin-top: -40px;
+    margin-left: 140px;
+    background-color: blue;
+}
