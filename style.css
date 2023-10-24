@@ -54,7 +54,7 @@ body {
 .menu-container ul li:hover .sub-menu-1 ul li {
     width: 150px;
     padding: 10px;
-    /* border-bottom: 1px dotted white; */
+    border-bottom: 1px dotted white;
     background: transparent;
     text-align: left;
 }
